@@ -3,10 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/hillv/OneDrive/Dokument/NetBeansProjects/MiB4.0-main/MibProjekt2.0/Mib_Projekt/src/mib_projekt/HuvudMeny.java</file>
-            <file>file:/C:/Users/hillv/OneDrive/Dokument/NetBeansProjects/MiB4.0-main/MibProjekt2.0/Mib_Projekt/src/mib_projekt/EfterInlogg.java</file>
-            <file>file:/C:/Users/hillv/OneDrive/Dokument/NetBeansProjects/MiB4.0-main/MibProjekt2.0/Mib_Projekt/src/mib_projekt/RegNyAlien.java</file>
-            <file>file:/C:/Users/hillv/OneDrive/Dokument/NetBeansProjects/MiB4.0-main/MibProjekt2.0/Mib_Projekt/src/mib_projekt/InLoggningAgent.java</file>
+            <file>file:/C:/Users/William/Documents/GitHub/MiB4.0-main/MibProjekt2.0/Mib_Projekt/src/mib_projekt/RegNyAlien.java</file>
+            <file>file:/C:/Users/William/Documents/GitHub/MiB4.0-main/MibProjekt2.0/Mib_Projekt/src/mib_projekt/AliensAvRas.java</file>
+            <file>file:/C:/Users/William/Documents/GitHub/MiB4.0-main/MibProjekt2.0/Mib_Projekt/src/mib_projekt/EfterInloggningAlien.java</file>
+            <file>file:/C:/Users/William/Documents/GitHub/MiB4.0-main/MibProjekt2.0/Mib_Projekt/src/mib_projekt/InLoggningAlien.java</file>
+            <file>file:/C:/Users/William/Documents/GitHub/MiB4.0-main/MibProjekt2.0/Mib_Projekt/src/mib_projekt/AliensPaPlats.java</file>
         </group>
     </open-files>
 </project-private>

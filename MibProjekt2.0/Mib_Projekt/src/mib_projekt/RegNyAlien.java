@@ -76,6 +76,12 @@ public class RegNyAlien extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        cbtnPlats.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cbtnPlatsActionPerformed(evt);
+            }
+        });
+
         lbPlats.setText("Plats:");
 
         btnReg.setText("Registera");
@@ -193,6 +199,10 @@ public class RegNyAlien extends javax.swing.JFrame {
         }
 
     }//GEN-LAST:event_btnRegActionPerformed
+
+    private void cbtnPlatsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbtnPlatsActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cbtnPlatsActionPerformed
 
     private void fyllPlatsCBox() {
         try {

@@ -43,6 +43,7 @@ public class InLoggningAlien extends javax.swing.JFrame {
         txtEpost = new javax.swing.JTextField();
         txtLosenord = new javax.swing.JTextField();
         lbValkommen = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -69,12 +70,14 @@ public class InLoggningAlien extends javax.swing.JFrame {
             }
         });
 
+        jLabel3.setText("Inloggning för alien");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(33, 33, 33)
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lbValkommen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
@@ -84,13 +87,19 @@ public class InLoggningAlien extends javax.swing.JFrame {
                             .addComponent(jLabel1)
                             .addComponent(txtEpost, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(loggaIn))
-                        .addGap(0, 245, Short.MAX_VALUE)))
-                .addContainerGap())
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addGap(33, 33, 33))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(148, 148, 148)
+                .addComponent(jLabel3)
+                .addContainerGap(148, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(23, 23, 23)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(33, Short.MAX_VALUE)
+                .addComponent(jLabel3)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel1)
                 .addGap(2, 2, 2)
                 .addComponent(txtEpost, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -102,7 +111,7 @@ public class InLoggningAlien extends javax.swing.JFrame {
                 .addComponent(loggaIn)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(lbValkommen, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(80, Short.MAX_VALUE))
+                .addGap(36, 36, 36))
         );
 
         pack();
@@ -117,13 +126,13 @@ public class InLoggningAlien extends javax.swing.JFrame {
     }//GEN-LAST:event_txtLosenordActionPerformed
 
     private void loggaInActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loggaInActionPerformed
-        //klicka på knapp
-        if (txtEpost.getText().isEmpty() || txtLosenord.getText().isEmpty()) {
+    //klicka på knapp
+    if (txtEpost.getText().isEmpty() || txtLosenord.getText().isEmpty()) {
     // Om någon av textrutorna är tom, visa felmeddelande
     JOptionPane.showMessageDialog(null, "Fyll i båda fälten!");
     txtEpost.requestFocus();
     txtLosenord.requestFocus();
-} else {
+    } else {
     try {
         String epost = txtEpost.getText();
         String losenord = txtLosenord.getText();
@@ -137,6 +146,9 @@ public class InLoggningAlien extends javax.swing.JFrame {
         //lbValkommen.setText(resultat);
         if (svar !=null && !svar.isEmpty()){
             lbValkommen.setText("Inloggningen lyckades välkommen!"+ epost);
+            EfterInloggningAlien nytt = new EfterInloggningAlien(epost);
+            InLoggningAlien.this.setVisible(false);
+            nytt.setVisible(true);
         }
         else{
             lbValkommen.setText("Inloggningen misslyckades \n kontrollera epost och lösenord");
@@ -146,10 +158,11 @@ public class InLoggningAlien extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(null, "Något gick fel!");
         System.out.println("Internt felmeddelande" + e.getMessage());
     }
-}
+    }
 
     }//GEN-LAST:event_loggaInActionPerformed
-
+    
+    
     /**
      * @param args the command line arguments
      */
@@ -177,6 +190,8 @@ public class InLoggningAlien extends javax.swing.JFrame {
         }
         //</editor-fold>
         //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -189,6 +204,7 @@ public class InLoggningAlien extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel lbValkommen;
     private javax.swing.JButton loggaIn;
     private javax.swing.JTextField txtEpost;
